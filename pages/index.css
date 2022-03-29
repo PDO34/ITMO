@@ -1,0 +1,43 @@
+/** общие стили */
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+
+/** about **/
+@import url(../blocks/about/about.css);
+
+/** education **/
+@import url(../blocks/education/education.css);
+
+/** feedback **/
+@import url(../blocks/feedback/feedback.css);
+
+/** footer **/
+@import url(../blocks/footer/footer.css);
+
+/** header **/
+@import url(../blocks/header/header.css);
+
+/** lab **/
+@import url(../blocks/lab/lab.css);
+
+/** lead **/
+@import url(../blocks/lead/lead.css);
+
+/** page **/
+@import url(../blocks/page/page.css);
+
+/** partners **/
+@import url(../blocks/partners/partners.css);
+
+/** projects **/
+@import url(../blocks/projects/projects.css);
+
+/** publications **/
+@import url(../blocks/publications/publications.css);
+
+/** root **/
+@import url(../blocks/root/root.css);
+
+/** team **/
+@import url(../blocks/team/team.css);
+
