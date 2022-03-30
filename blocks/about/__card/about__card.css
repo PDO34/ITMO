@@ -1,0 +1,5 @@
+.about__card {
+  max-width: 320px;
+  background-color: rgba(224, 240, 255, 1);
+  border-radius: 10px;
+}
