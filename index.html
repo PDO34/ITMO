@@ -183,7 +183,55 @@
         <section class="publications"></section>
         <section class="team"></section>
         <section class="partners"></section>
-        <section class="feedback"></section>
+        <section class="feedback">
+          <h2 class="feedback__title">всегда на связи</h2>
+          <p class="feedback__discription">
+            По&nbsp;всем интересующим вас вопросам вы&nbsp;всегда
+            можете&nbsp;обратиться по указанным телефонам,
+            написать&nbsp;на&nbsp;почту&nbsp;или оставтиь свое
+            сообщение&nbsp;через&nbsp;форму&nbsp;обратной связи.
+          </p>
+          <form action="#" name="feedback" class="feedback__form">
+            <input
+              class="feedback__input input_grid_name"
+              type="text"
+              name="name"
+              minlength="2"
+              required
+              placeholder="Имя"
+            />
+            <input
+              class="feedback__input input_grid_surname"
+              type="text"
+              name="surname"
+              minlength="2"
+              placeholder="Фамилия"
+            />
+            <input
+              class="feedback__input input_grid_tel"
+              type="tel"
+              name="tel"
+              minlength="8"
+              required
+              placeholder="Телефон"
+            />
+            <input
+              class="feedback__input input_grid_email"
+              type="email"
+              name="email"
+              minlength="6"
+              required
+              placeholder="E-mail"
+            />
+            <textarea
+              class="feedback__input feedback_input-messege"
+              type="text"
+              name="messege"
+              placeholder="Сообщение"
+            ></textarea>
+            <button type="submit" class="feedback__button">отправить</button>
+          </form>
+        </section>
       </main>
       <!-- footer -->
       <footer class="footer"></footer>

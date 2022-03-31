@@ -20,6 +20,13 @@
 
 /** feedback **/
 @import url(../blocks/feedback/feedback.css);
+@import url(../blocks/feedback/__button/feedback__button.css);
+@import url(../blocks/feedback/__discription/feedback__discription.css);
+@import url(../blocks/feedback/__form/feedback__form.css);
+@import url(../blocks/feedback/__input/feedback__input.css);
+@import url(../blocks/feedback/__title/feedback__title.css);
+@import url(../blocks/feedback/_input-messege/feedback_input-messege.css);
+@import url(../blocks/feedback/_grid/input_grid_all.css);
 
 /** footer **/
 @import url(../blocks/footer/footer.css);

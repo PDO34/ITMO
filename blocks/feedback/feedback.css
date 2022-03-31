@@ -1,0 +1,19 @@
+.feedback {
+  background-color: #009FAC;
+  padding: 40px 16px;
+}
+@media (min-width: 768px) {
+  .feedback {
+    padding: 60px 39px;
+  }
+}
+@media (min-width: 1024px) {
+  .feedback {
+    padding: 70px 80px 35px;
+  }
+}
+@media (min-width: 1320px) {
+  .feedback {
+    padding: 80px 162px 35px;
+  }
+}
