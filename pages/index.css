@@ -1,17 +1,22 @@
 /** общие стили */
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
+@import url(../vendor/swiper/swiper.css);
 
 /** about **/
 @import url(../blocks/about/about.css);
 @import url(../blocks/about/__card/about__card.css);
-@import url(../blocks/about/__card-icon/about__card-icon.css);
+@import url(../blocks/about/__card-content/about__card-content.css);
+@import url(../blocks/about/__card-description/about__card-description.css);
+@import url(../blocks/about/__card-icon-pushpin/about__card-icon-pushpin.css);
 @import url(../blocks/about/__card-subtitle/about__card-subtitle.css);
-@import url(../blocks/about/__card-text/about__card-text.css);
 @import url(../blocks/about/__card-title/about__card-title.css);
-@import url(../blocks/about/__card-title-wrapper/about__card-title-wrapper.css);
-@import url(../blocks/about/__carousel/about__carousel.css);
+@import url(../blocks/about/__card-title-area/about__card-title-area.css);
 @import url(../blocks/about/__description/about__description.css);
+@import url(../blocks/about/__slide/about__slide.css);
+@import url(../blocks/about/__slider/about__slider.css);
+@import url(../blocks/about/__slider-container/about__slider-container.css);
+@import url(../blocks/about/__slider-wrapper/about__slider-wrapper.css);
 @import url(../blocks/about/__text-wrapper/about__text-wrapper.css);
 @import url(../blocks/about/__title/about__title.css);
 
@@ -64,9 +69,5 @@
 /** root **/
 @import url(../blocks/root/root.css);
 
-/** swiper-about (для секции Несколько слов о нас (about)) **/
-@import url(../blocks/swiper-about/swiper-about.css);
-
 /** team **/
 @import url(../blocks/team/team.css);
-
