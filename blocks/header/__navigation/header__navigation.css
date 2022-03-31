@@ -1,0 +1,10 @@
+.header__navigation {
+  display: none;
+  grid-area: menu;
+  align-self: center;
+}
+@media (min-width: 1024px) {
+  .header__navigation {
+    display: block;
+  }
+}
