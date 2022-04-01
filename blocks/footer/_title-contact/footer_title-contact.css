@@ -1,0 +1,15 @@
+.footer_title-contact {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  margin: 0 0 8px;
+}
+@media (min-width: 768px) {
+  .footer_title-contact {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(20 / 18);
+    letter-spacing: 0.1px;
+    margin: 0 0 12px;
+    }
+}
