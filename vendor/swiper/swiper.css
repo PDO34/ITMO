@@ -62,7 +62,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: 50%;
+  top: calc(50% - 30px);
   left: -20px;
   margin-left: 15px;
   width: 60px;
@@ -81,7 +81,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: 50%;
+  top: calc(50% - 30px);
   right: -20px;
   margin-right: 15px;
   width: 60px;

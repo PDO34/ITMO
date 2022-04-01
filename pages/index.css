@@ -55,6 +55,8 @@
 
 /** projects **/
 @import url(../blocks/projects/projects.css);
+@import url(../blocks/projects/__main-container/projects__main-container.css);
+@import url(../blocks/projects/__title/projects__title.css);
 
 /** publications **/
 @import url(../blocks/publications/publications.css);
