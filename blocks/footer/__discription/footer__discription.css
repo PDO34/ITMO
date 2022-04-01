@@ -1,0 +1,11 @@
+.footer__discription {
+  display: none;
+  grid-area: discription;
+
+}
+@media (min-width: 768px) {
+  .footer__discription {
+    display: block;
+    margin: 0;
+  }
+}

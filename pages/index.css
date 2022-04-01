@@ -1,7 +1,7 @@
 /** общие стили */
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
-
+@import url(../blocks/list/list.css);
 /** about **/
 @import url(../blocks/about/about.css);
 @import url(../blocks/about/__card/about__card.css);
@@ -30,6 +30,24 @@
 
 /** footer **/
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__container/footer__container.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+@import url(../blocks/footer/__discription/footer__discription.css);
+@import url(../blocks/footer/__item-soc/footer__item-soc.css);
+@import url(../blocks/footer/__item/footer__item.css);
+@import url(../blocks/footer/__itmo/footer__itmo.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__list/footer__list.css);
+@import url(../blocks/footer/__logo-link/footer__logo-link.css);
+@import url(../blocks/footer/__manufacturer/footer__manufacturer.css);
+@import url(../blocks/footer/__navigation/footer__navigation.css);
+@import url(../blocks/footer/__social/footer__social.css);
+@import url(../blocks/footer/__title/footer__title.css);
+@import url(../blocks/footer/_title-contact/footer_title-contact.css);
+@import url(../blocks/footer/_grid/footer_grid_all.css);
+@import url(../blocks/footer/__img/footer__img.css);
+@import url(../blocks/footer/_list-contact/footer_list-contact.css);
+@import url(../blocks/footer/_link-tel/footer_link-tel.css);
 
 /** header **/
 @import url(../blocks/header/header.css);
