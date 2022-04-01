@@ -1,0 +1,10 @@
+.education__subtitle {
+    display: flex;
+    margin: 20px 16px;
+    width: 288px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: white;
+
+}

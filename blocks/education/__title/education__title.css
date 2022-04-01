@@ -1,0 +1,11 @@
+.education__title {
+    display: flex;
+    width: 121px;
+    height: 22px;
+    margin: 40px auto 0;
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    font-style: normal;
+}

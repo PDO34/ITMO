@@ -1,0 +1,9 @@
+.education__card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 288px;
+    height: 528px;
+    border-radius: 5px;
+    margin: 0 16px;
+}
