@@ -24,12 +24,28 @@
     />
   </head>
 
-  <body class="root">
-    <div class="page">
-      <!-- header -->
-      <header class="header">
-        <div class="header__burger">
-          <span class="header_burger_line"></span>
+<body class="root">
+  <div class="page">
+<!-- header -->
+    <header class="header"></header>
+<!-- main -->
+    <main class="main-content">
+<!-- секция: Когнитивные технологии (lead) -->
+      <section class="lead">
+        <div class="lead__content">
+          <div class="lead__text-wrapper">
+            <h1 class="lead__title"><span class="lead__title lead__title_font-style_accented">Когнитивные технологии,</span> машинное обучение</h1>
+            <p class="lead__subtitle">Системы прикладного искусственного интеллекта</p>
+          </div>
+          <a href="#" class="lead__link">НАШИ ПРОЕКТЫ</a>
+        </div>
+      </section>
+<!-- секция: Несколько слов о нас (about) -->
+      <section class="about">
+        <div class="about__text-wrapper">
+          <h2 class="about__title">НЕСКОЛЬКО СЛОВ О НАС</h2>
+          <p class="about__description">Национальный центр когнитивных разработок – центр национальной технологической инициативы (НТИ), получивший государственную поддержку по направлению «Технологии машинного обучения
+            и когнитивные технологии».</p>
         </div>
         <nav class="header__navigation">
           <ul class="header__list list">
@@ -170,15 +186,32 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        </section>
+
+        <!-- другие секции -->
+        <section class="lab"></section>
+
+        <!-- секция: Наши проекты (projects) -->
+        <section class="projects">
+          <h2 class="projects__title">НАШИ ПРОЕКТЫ</h2>
+          <div class="projects__main-container">
+            <nav class="projects__menu"></nav>
+            <div class="projects__slider">
+              <div class="projects__slider-wrapper">
+                <div class="projects__slide">
+                  <div class="projects__card">
+
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="lab"></section>
-        <section class="projects"></section>
+<!-- другие секции -->
         <section class="education"></section>
         <section class="publications"></section>
         <section class="team"></section>
@@ -341,11 +374,8 @@
     <section class="popup"></section>
     <!-- TEMPLATE -->
     <template id="template"></template>
-    <!-- SCRIPTS -->
-    <!-- <script src="./scripts/index.js"></script> -->
-    <script
-      type="module"
-      src="https://unpkg.com/swiper/swiper-bundle.min.js"
-    ></script>
+<!-- SCRIPTS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
