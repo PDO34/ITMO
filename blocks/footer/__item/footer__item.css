@@ -1,8 +1,0 @@
-.footer__item {
-
-}
-@media (min-width: 768px) {
-  .footer__item:not(:last-child) {
-    margin-bottom: 8px;
-  }
-}
