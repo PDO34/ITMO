@@ -1,0 +1,9 @@
+.about__card-title {
+  margin: 8px 0 0;
+  color: rgba(0, 19, 55, 1);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

@@ -1,0 +1,10 @@
+.header_burger_line {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 1px);
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+}

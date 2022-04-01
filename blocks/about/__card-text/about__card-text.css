@@ -1,0 +1,9 @@
+.about__card-text {
+  margin: 20px;
+  max-width: 308px;
+  color: rgba(0, 13, 38, 1);
+  text-align: justify;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}

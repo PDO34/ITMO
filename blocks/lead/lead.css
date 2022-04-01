@@ -1,0 +1,44 @@
+.lead {
+  /* max-width: 320px; */
+  background-color: rgba(0, 19, 55, 1);
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  display: flex;
+}
+
+.lead::after {
+  content: "";
+  min-width: 320px;
+  min-height: 100%;
+  width: 100%;
+  background-image: url(../../images/Background.png);
+  /* background-position: top right; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(-1, 1);
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  .lead::after {
+    min-width: 768px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .lead {
+    justify-content: flex-end;
+  }
+
+  .lead::after {
+    min-width: 768px;
+    transform: none;
+    left: 0;
+  }
+}
