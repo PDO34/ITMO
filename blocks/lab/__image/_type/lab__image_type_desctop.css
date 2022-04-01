@@ -1,0 +1,25 @@
+.lab__image_type_desctop {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .lab__image_type_desctop {
+    height: 100%;
+    border-radius: 10px;
+    display: inline-block;
+    grid-area: image-headphones;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .lab__image_type_desctop {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}

@@ -34,6 +34,19 @@
 
 /** lab **/
 @import url(../blocks/lab/lab.css);
+@import url(../blocks/lab/__title/lab__title.css);
+@import url(../blocks/lab/__container/lab__container.css);
+@import url(../blocks/lab/__image/lab__image.css);
+@import url(../blocks/lab/__image/_type/lab__image_type_desctop.css);
+@import url(../blocks/lab/__subtitle/lab__subtitle.css);
+@import url(../blocks/lab/__desc/lab__desc.css);
+@import url(../blocks/lab/__cards/lab__cards.css);
+@import url(../blocks/lab/__card/lab__card.css);
+@import url(../blocks/lab/__card-title/lab__card-title.css);
+@import url(../blocks/lab/__card-image/lab__card-image.css);
+@import url(../blocks/lab/__card-icon/lab__card-icon.css);
+@import url(../blocks/lab/__card-desc/lab__card-desc.css);
+@import url(../blocks/lab/__card-more/lab__card-more.css);
 
 /** lead **/
 @import url(../blocks/lead/lead.css);
