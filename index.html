@@ -94,20 +94,33 @@
       <section class="projects">
         <h2 class="projects__title">НАШИ ПРОЕКТЫ</h2>
         <div class="projects__main-container">
-          <nav class="projects__menu"></nav>
-          <div class="projects__slider">
-            <div class="projects__slider-wrapper">
-              <div class="projects__slide">
-                <div class="projects__card">
+          <nav class="projects__menu">
+            <ul class="projects__menu-list">
+              <li class="projects__menu-list-item"> <button id="allProjects"  class="projects__menu-button projects__menu-button_active" type="button">ВСЕ ПРОЕКТЫ</button></li>
+              <li class="projects__menu-list-item"><button id="govProjects" class="projects__menu-button" type="button">ГОС. ПРОЕКТЫ</button></li>
+              <li class="projects__menu-list-item"><button id="specProjects" class="projects__menu-button" type="button">СПЕЦПРОГРАММЫ</button></li>
+              <li class="projects__menu-list-item"><button id="inProgress" class="projects__menu-button" type="button">В РАЗРАБОТКЕ</button></li>
+            </ul>
+          </nav>
 
-                </div>
-              </div>
+          <div class="projects__burger">
+            <div class="projects__burger-nav">
+              <div class="projects__burger-nav-button projects__burger-nav-item_active">ВСЕ ПРОЕКТЫ</div>
+              <ul class="projects__burger-nav-list">
+                <li class="projects__burger-nav-item projects__burger-nav-item_active">ВСЕ ПРОЕКТЫ</li>
+                <li class="projects__burger-nav-item">ГОС. ПРОЕКТЫ</li>
+                <li class="projects__burger-nav-item">СПЕЦПРОГРАММЫ</li>
+                <li class="projects__burger-nav-item">В РАЗРАБОТКЕ</li>
+              </ul>
             </div>
+          </div>
+
+          <div class="projects__cards">
+            <ul class="projects__cards-list">
+            </ul>
           </div>
         </div>
       </section>
-
-
 
 <!-- другие секции -->
       <section class="education"></section>
@@ -121,9 +134,27 @@
   </div>
   <!-- POPUP -->
   <section class="popup"></section>
-  <!-- TEMPLATE -->
-  <template id="template"></template>
+  <!-- TEMPLATE for cards-->
+  <!-- <template id="template-projects-cards">
+    <li class="projects__card">
+      <img src="#" alt="" class="projects__card-image">
+      <div class="projects__card-wrapper">
+        <h2 class="projects__card-title"></h2>
+      </div>
+    </li>
+  </template> -->
+  <template id="template-projects-cards">
+    <li class="projects__card">
+      <img src="#" alt="" class="projects__card-logo">
+      <div class="projects__card-wrapper">
+        <p class="projects__card-text"></p>
+        <!-- <a class="projects__card-btn-details projects__card-btn-details_inactive" type="button">Подробнее &rarr;</a> -->
+      </div>
+      <button class="projects__card-btn-next" type="button"></button>
+    </li>
+  </template>
   <!-- SCRIPTS -->
+  <script src="./scripts/projectCards.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./scripts/index.js"></script>
 </body>

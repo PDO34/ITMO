@@ -1,0 +1,20 @@
+.projects__cards-list {
+
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, 140px);
+  gap: 8px 8px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .rojects__cards-list {
+    grid-template-columns: repeat(auto-fit, 254px);
+    gap: 30px 29px;
+  }
+}

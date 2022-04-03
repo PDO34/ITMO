@@ -1,0 +1,19 @@
+.projects__burger-nav-button {
+  margin: 0;
+  padding: 10px 0;
+  min-width: 290px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  border-bottom: 3px solid rgba(0, 159, 172, 1);
+  background-color: rgba(0, 19, 55, 1);
+  cursor: pointer;
+
+
+  background-image: url(../../../images/Icons/arrow-burger-nav.svg);
+    background-repeat: no-repeat;
+    background-size: 12px 6px;
+    background-position: right;
+}

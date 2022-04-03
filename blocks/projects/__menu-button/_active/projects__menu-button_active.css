@@ -1,0 +1,4 @@
+.projects__menu-button_active {
+  font-weight: 600;
+  border-bottom: 3px solid rgba(0, 159, 172, 1);
+}

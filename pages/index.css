@@ -55,8 +55,21 @@
 
 /** projects **/
 @import url(../blocks/projects/projects.css);
+@import url(../blocks/projects/__burger/projects__burger.css);
+@import url(../blocks/projects/__burger-nav/projects__burger-nav.css);
+@import url(../blocks/projects/__burger-nav-button/projects__burger-nav-button.css);
+@import url(../blocks/projects/__burger-nav-item/projects__burger-nav-item.css);
+@import url(../blocks/projects/__burger-nav-list/projects__burger-nav-list.css);
+@import url(../blocks/projects/__burger-nav-list/_opened/projects__burger-nav-list_opened.css);
+@import url(../blocks/projects/__cards/projects__cards.css);
+@import url(../blocks/projects/__cards-list/projects__cards-list.css);
 @import url(../blocks/projects/__main-container/projects__main-container.css);
 @import url(../blocks/projects/__title/projects__title.css);
+@import url(../blocks/projects/__menu/projects__menu.css);
+@import url(../blocks/projects/__menu-button/projects__menu-button.css);
+@import url(../blocks/projects/__menu-button/_active/projects__menu-button_active.css);
+@import url(../blocks/projects/__menu-list/projects__menu-list.css);
+@import url(../blocks/projects/__menu-list-item/projects__menu-list-item.css);
 
 /** publications **/
 @import url(../blocks/publications/publications.css);
@@ -66,3 +79,68 @@
 
 /** team **/
 @import url(../blocks/team/team.css);
+
+
+
+
+.projects__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  border-radius: 10px;
+  /* max-height: 361px; */
+  position: relative;
+  width: 140px;
+  height: 130px;
+}
+
+.projects__card-logo {
+  height: 26px;
+  margin: 10px 0 0 10px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.projects__card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  position: relative;
+}
+
+.projects__card-text {
+  margin: 0;
+  padding: 8px 10px 0 10px;
+  box-sizing: border-box;
+  min-height: 80px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.projects__card-btn-next {
+  padding: 0;
+  margin: 0 10px 10px 0;
+  align-self: flex-end;
+  border: none;
+  border-radius: 50%;
+  font: inherit;
+  color: inherit;
+  background-image: url(../images/Projects/projects-arrow-right.svg);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-position: center;
+  box-shadow: 0px 2.20472px 11.0236px rgba(1, 54, 157, 0.15);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

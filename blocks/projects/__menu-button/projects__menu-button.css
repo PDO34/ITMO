@@ -1,0 +1,37 @@
+.projects__menu-button {
+  margin: 0;
+  padding: 0;
+  min-width: 172px;
+  min-height: 44px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .projects__menu-button {
+    min-width: 172px;
+    min-height: 44px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .projects__menu-button {
+    min-width: 236px;
+    min-height: 48px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__menu-button {
+    min-width: 278px;
+  }
+}
