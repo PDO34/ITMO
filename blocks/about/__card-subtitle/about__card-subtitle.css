@@ -1,10 +1,8 @@
 .about__card-subtitle {
   margin: 0;
-  padding: 0;
-  color: #009FAC;
-  text-align: left;
+  color: rgba(0, 159, 172, 1);
   font-style: italic;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 17px;
+  font-size: 14px;
+  line-height: 19px;
 }

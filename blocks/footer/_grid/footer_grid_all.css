@@ -1,0 +1,9 @@
+.footer_grid_about {
+  grid-area: about;
+}
+.footer_grid_develop {
+  grid-area: develop;
+}
+.footer_grid_contact {
+  grid-area: contact;
+}

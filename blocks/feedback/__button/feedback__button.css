@@ -1,0 +1,32 @@
+.feedback__button {
+  display: flex;
+  text-transform: uppercase;
+  height: 44px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 100%;
+  padding: 0;
+  margin-top: 11px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  grid-area: button;
+  justify-self: center;
+}
+@media (min-width: 768px) {
+  .feedback__button {
+    border-radius: 10px;
+    margin-top: 17px;
+    font-size: 18px;
+    line-height: calc(30 / 18);
+  }
+}
+@media (min-width: 1024px) {
+  .feedback__button {
+    height: 60px;
+  }
+}

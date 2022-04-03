@@ -4,11 +4,6 @@
     text-align: center;
 }
 
-@media screen and (min-width: 480px) {
-  .about__text-wrapper {
-    max-width: 690px;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .about__text-wrapper {

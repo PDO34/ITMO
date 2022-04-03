@@ -17,7 +17,7 @@
     />
     <meta name="robots" content="noindex" />
     <title>Industrial AI Research Lab</title>
-
+    <link rel="stylesheet" href="./pages/index.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -28,7 +28,38 @@
   <body class="root">
     <div class="page">
       <!-- header -->
-      <header class="header"></header>
+      <header class="header">
+        <div class="header__burger">
+          <span class="header_burger_line"></span>
+        </div>
+        <nav class="header__navigation">
+          <ul class="header__list list">
+            <li class="header__item header_link_active">
+              <a href="#" class="header__link">О нас</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Лаборатория</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Проекты</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Образование</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Публикации</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Команда</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Связаться</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="header__logo-link"></a>
+      </header>
+
       <!-- main -->
       <main class="main-content">
         <!-- секция: Когнитивные технологии (lead) -->
@@ -60,6 +91,7 @@
             </p>
           </div>
           <!-- Swiper -->
+
           <div class="about__slider-container">
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -70,6 +102,7 @@
                   <div class="about__card-icon-pushpin"></div>
                   <div class="about__card-content">
                     <div class="about__card-title-area">
+
                       <p class="about__card-subtitle">
                         Понедельник, 5 июля 2021г
                       </p>
@@ -77,8 +110,15 @@
                         ЗНАКОМСТВО С МАШИННЫМ ОБУЧЕНИЕМ: СТУДЕНТЫ ЕВРАЗИЙСКОГО
                         НАЦИОНАЛЬ…
                       </h3>
+
+                      <img
+                        class="about__card-icon"
+                        src="./images/Icons/pushpin.svg"
+                        alt="Иконка канцелярской кнопки"
+                      />
                     </div>
-                    <p class="about__card-description">
+                    <p class="about__card-text">
+
                       Университет ИТМО провел научно-исследовательскую
                       стажировку для группы магистрантов из Евразийского
                       национального университета имени Л.Н. Гумилева. Ведущие
@@ -87,16 +127,19 @@
                     </p>
                   </div>
                 </div>
+
                 <!-- карточка 2-->
                 <div class="swiper-slide about__card">
                   <div class="about__card-icon-pushpin"></div>
                   <div class="about__card-content">
                     <div class="about__card-title-area">
+
                       <p class="about__card-subtitle">
                         Понедельник, 5 июля 2021г
                       </p>
                       <h3 class="about__card-title">
                         АВТОРЫ РОБОТА-МУЗЫКАНТА РОБЕРТА РОБОТЕЦКОГО ПРИЗНАНЫ
+
                         ЛУЧШИМИ НОВИЧК…
                       </h3>
                     </div>
@@ -163,8 +206,6 @@
               образом и проявляя гибкость, мы можем поддерживать новый подход
               для удовлетворения потребностей наших клиентов.
             </p>
-          </div>
-
           <ul class="lab__cards">
             <li class="lab__card">
               <h3 class="lab__card-title">Анализ социальных данных</h3>
@@ -231,22 +272,177 @@
             </li>
           </ul>
         </section>
+
         <section class="projects"></section>
         <section class="education"></section>
         <section class="publications"></section>
         <section class="team"></section>
         <section class="partners"></section>
-        <section class="feedback"></section>
+
+        <section class="feedback">
+          <h2 class="feedback__title">всегда на связи</h2>
+          <p class="feedback__discription">
+            По&nbsp;всем интересующим вас вопросам вы&nbsp;всегда
+            можете&nbsp;обратиться по указанным телефонам,
+            написать&nbsp;на&nbsp;почту&nbsp;или оставтиь свое
+            сообщение&nbsp;через&nbsp;форму&nbsp;обратной связи.
+          </p>
+          <form action="#" name="feedback" class="feedback__form">
+            <input
+              class="feedback__input input_grid_name"
+              type="text"
+              name="name"
+              minlength="2"
+              required
+              placeholder="Имя"
+            />
+            <input
+              class="feedback__input input_grid_surname"
+              type="text"
+              name="surname"
+              minlength="2"
+              placeholder="Фамилия"
+            />
+            <input
+              class="feedback__input input_grid_tel"
+              type="tel"
+              name="tel"
+              minlength="8"
+              required
+              placeholder="Телефон"
+            />
+            <input
+              class="feedback__input input_grid_email"
+              type="email"
+              name="email"
+              minlength="6"
+              required
+              placeholder="E-mail"
+            />
+            <textarea
+              class="feedback__input feedback_input-messege"
+              type="text"
+              name="messege"
+              placeholder="Сообщение"
+            ></textarea>
+            <button type="submit" class="feedback__button">отправить</button>
+          </form>
+        </section>
       </main>
       <!-- footer -->
-      <footer class="footer"></footer>
-    </div>
+      <footer class="footer">
+        <div class="footer__container">
+          <a href="" class="footer__logo-link"></a>
+          <p class="footer__copyright">Информация © 2020 Университет ИТМО</p>
+        <p class="footer__discription">
+          Национальный центр когнитивных разработок – центр национальной
+          технологической инициативы (НТИ), получивший государственную поддержку
+          по направлению «Технологии машинного обучения и когнитивные
+          технологии». Инфраструктурная основа взаимодействия научных,
+          образовательных и промышленных организаций
+        </p>
+        <nav class="footer__navigation footer_grid_about">
+          <h2 class="footer__title">О центре</h2>
+          <ul class="footer__list list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">О нас</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Главная</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Команда</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Лаборатория</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer__navigation footer_grid_develop">
+          <h2 class="footer__title">Развитие</h2>
+          <ul class="footer__list list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Образование</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Аспирантура</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Магистратура</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Публикации</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Проекты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__list footer_list-contact list footer_grid_contact">
+          <li class="footer__item">
+            <h2 class="footer_title-contact footer__title">г.Санкт-Петербург</h2>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link"
+              >199034, Санкт-Петербург, Биржевая&nbsp;линия,&nbsp;д.&nbsp;4,&nbsp;лит.&nbsp;М,&nbsp;ауд.&nbsp;302С</a
+            >
+          </li>
+          <li class="footer__item">
+            <a href="tel:+78123376490" class="footer__link"
+              >+7 (812) 337-64-90</a
+            >
+            <a href="tel:+78123376494" class="footer__link footer_link-tel"
+              >+7 (812) 337-64-94</a
+            >
+          </li>
+          <li class="footer__item">
+            <a href="mailto:anna.lutsenko@itmo.ru" class="footer__link">anna.lutsenko@itmo.ru</a>
+          </li>
+        </ul>
+        <ul class="footer__social list">
+          <li class="footer__item-soc">
+            <a href="" class="footer__link"
+              ><img src="./images/footer/vk.svg" alt="Мы в вконтакте" class="footer__img"
+            /></a>
+          </li>
+          <li class="footer__item-soc">
+            <a href="" class="footer__link"
+              ><img src="./images/footer/facebook.svg" alt="Мы в фейсбук" class="footer__img"
+            /></a>
+          </li>
+          <li class="footer__item-soc">
+            <a href="" class="footer__link"
+              ><img src="./images/footer/telegram.svg" alt="Мы в телеграм" class="footer__img"
+            /></a>
+          </li>
+          <li class="footer__item-soc">
+            <a href="" class="footer__link"
+              ><img src="./images/footer/insta.svg" alt="Мы в инстаграм" class="footer__img"
+            /></a>
+          </li>
+          <li class="footer__item-soc">
+            <a href="" class="footer__link"
+              ><img src="./images/footer/uou-tube.svg" alt="Мы в ютуб" class="footer__img"
+            /></a>
+          </li>
+        </ul>
+        <a href="#" class="footer__manufacturer">Сделано студентами Яндекс. Практикума</a>
+      </div>
+      </footer>
+
     <!-- POPUP -->
     <section class="popup"></section>
     <!-- TEMPLATE -->
     <template id="template"></template>
     <!-- SCRIPTS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./scripts/index.js"></script>
+
+    <!-- <script src="./scripts/index.js"></script> -->
+    <script
+      type="module"
+      src="https://unpkg.com/swiper/swiper-bundle.min.js"
+    ></script>
   </body>
 </html>

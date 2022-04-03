@@ -1,0 +1,9 @@
+.feedback_input-messege {
+  min-height: 140px;
+  grid-area: messege;
+}
+@media (min-width: 768px) {
+  .feedback_input-messege {
+    min-height: 0;
+  }
+}

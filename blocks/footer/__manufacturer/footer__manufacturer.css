@@ -1,0 +1,14 @@
+.footer__manufacturer {
+  line-height: 16px;
+  text-align: center;
+  opacity: 0.5;
+  margin: 0;
+  grid-area: manufacturer;
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width: 768px) {
+  .footer__manufacturer {
+    text-align: start;
+  }
+}
