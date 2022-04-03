@@ -94,26 +94,28 @@
       <section class="projects">
         <h2 class="projects__title">НАШИ ПРОЕКТЫ</h2>
         <div class="projects__main-container">
-          <nav class="projects__menu">
+          <!-- <nav class="projects__menu">
             <ul class="projects__menu-list">
               <li class="projects__menu-list-item"> <button id="allProjects"  class="projects__menu-button projects__menu-button_active" type="button">ВСЕ ПРОЕКТЫ</button></li>
               <li class="projects__menu-list-item"><button id="govProjects" class="projects__menu-button" type="button">ГОС. ПРОЕКТЫ</button></li>
               <li class="projects__menu-list-item"><button id="specProjects" class="projects__menu-button" type="button">СПЕЦПРОГРАММЫ</button></li>
               <li class="projects__menu-list-item"><button id="inProgress" class="projects__menu-button" type="button">В РАЗРАБОТКЕ</button></li>
             </ul>
-          </nav>
+          </nav> -->
 
           <div class="projects__burger">
             <div class="projects__burger-nav">
-              <div class="projects__burger-nav-button projects__burger-nav-item_active">ВСЕ ПРОЕКТЫ</div>
+              <div class="projects__burger-nav-button projects__burger-nav-item_active"></div>
               <ul class="projects__burger-nav-list">
-                <li class="projects__burger-nav-item projects__burger-nav-item_active">ВСЕ ПРОЕКТЫ</li>
-                <li class="projects__burger-nav-item">ГОС. ПРОЕКТЫ</li>
-                <li class="projects__burger-nav-item">СПЕЦПРОГРАММЫ</li>
-                <li class="projects__burger-nav-item">В РАЗРАБОТКЕ</li>
+                <li id="allProjects" class="projects__burger-nav-item projects__burger-nav-item_active"></li>
+                <li id="govProjects" class="projects__burger-nav-item"></li>
+                <li id="specProjects" class="projects__burger-nav-item"></li>
+                <li id="inProgress" class="projects__burger-nav-item"></li>
               </ul>
             </div>
           </div>
+
+
 
           <div class="projects__cards">
             <ul class="projects__cards-list">
@@ -155,6 +157,7 @@
   </template>
   <!-- SCRIPTS -->
   <script src="./scripts/projectCards.js"></script>
+  <script src="./scripts/menuItemsArr.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./scripts/index.js"></script>
 </body>

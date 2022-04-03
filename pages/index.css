@@ -59,6 +59,7 @@
 @import url(../blocks/projects/__burger-nav/projects__burger-nav.css);
 @import url(../blocks/projects/__burger-nav-button/projects__burger-nav-button.css);
 @import url(../blocks/projects/__burger-nav-item/projects__burger-nav-item.css);
+@import url(../blocks/projects/__burger-nav-item/_hidden/projects__burger-nav-item_hidden.css);
 @import url(../blocks/projects/__burger-nav-list/projects__burger-nav-list.css);
 @import url(../blocks/projects/__burger-nav-list/_opened/projects__burger-nav-list_opened.css);
 @import url(../blocks/projects/__cards/projects__cards.css);

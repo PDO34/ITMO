@@ -125,17 +125,22 @@ const chunkArray = b => {
   for (i = 0; i < projectsCards.length; i += b) {
     newArray.push(projectsCards.slice(i, i + b));
   }
-  console.log(newArray);
 };
 */
 
-/** Изначально отприсовать все карточки на странице */
+/** Изначально отрисовать все карточки на странице */
 projectsCards.forEach(item => renderCard(item.logo, item.textMain, item.bgrImgage));
 
-/** Открыть/закрыть меню бамбургера */
+/** ФУНКЦИЯ: Открыть/закрыть меню бамбургера */
 const projectsBurgerElm = document.querySelector('.projects__burger');
 const projectsBurgerNavBtn = projectsBurgerElm.querySelector('.projects__burger-nav-button');
 const projectsBurgerNavList = projectsBurgerElm.querySelector('.projects__burger-nav-list');
+const projectsBurgerNavItem = Array.from(projectsBurgerElm.querySelectorAll('.projects__burger-nav-item')); // массив со ссылками на все кнопки бургера
+
+const allProjectsBtn = projectsBurgerElm.querySelector('#allProjects');
+const govProjectsBtn = projectsBurgerElm.querySelector('#govProjects');
+const specProjects = projectsBurgerElm.querySelector('#specProjects');
+const inProgress = projectsBurgerElm.querySelector('#inProgress');
 
 const toggleBurgerNav = () => {
   projectsBurgerNavList.classList.toggle('projects__burger-nav-list_opened');
@@ -143,17 +148,46 @@ const toggleBurgerNav = () => {
 
 projectsBurgerNavBtn.addEventListener('click', toggleBurgerNav);
 
-/** Фильтрация карточек по id */
+
+
+/** функционирование выпадающего меню(бургера) */
+
+/** Изначально заполнить название кнопки и пунктов меню */
+projectsBurgerNavBtn.textContent = menuItemsArr[0].title;
+
+allProjectsBtn.textContent = menuItemsArr[0].title;
+govProjectsBtn.textContent = menuItemsArr[1].title;
+specProjects.textContent = menuItemsArr[2].title;
+inProgress.textContent = menuItemsArr[3].title;
+
+/** ФУНКЦИЯ: Изменить пункты мены выпадающего списка при клике на другой пункт*/
+const chooseNewNavItem = (evt) => {
+  //отобразить скрытый пункт меню выпащающего списка
+  projectsBurgerElm.querySelector('.projects__burger-nav-item_hidden').classList.remove('projects__burger-nav-item_hidden');
+  //скрыть пункт меню, по которому кликнули
+  evt.target.classList.add('projects__burger-nav-item_hidden');
+
+  //Изменить текст кнопки выпадающего списка
+  menuItemsArr.forEach(arrItem => {
+    // const a = evt.target.getAttribute('id');
+    if (arrItem.id === evt.target.getAttribute('id')) {
+      projectsBurgerNavBtn.textContent = arrItem.title;
+      };
+  });
+};
+
+/** ФУНКЦИЯ: Фильтрация карточек по id */
+
 const renderFilteredCards = (evt) => {
   // 1) переключить активную кнопку
-  navProjects.querySelectorAll('.projects__menu-button').forEach(item => {
-    if (item.classList.contains('projects__menu-button_active')) {
-      item.classList.remove('projects__menu-button_active');
+  projectsBurgerNavItem.forEach(item => {
+    if (item.classList.contains('projects__burger-nav-item_active')) {
+      item.classList.remove('projects__burger-nav-item_active');
     };
     return;
   });
 
-  evt.target.classList.add('projects__menu-button_active');
+  evt.target.classList.add('projects__burger-nav-item_active');
 
 
   // 2) удалить все карточки со страницы
@@ -164,7 +198,6 @@ const renderFilteredCards = (evt) => {
 
   // 3) отрисовать на странице отфильтрованные карточки
   projectsCards.forEach(item => {
-    // console.log(item, item.id);
 
     if (item.id === evt.target.getAttribute('id') || evt.target.getAttribute('id') === 'allProjects') {
       renderCard(item.logo, item.textMain, item.bgrImgage);
@@ -172,9 +205,68 @@ const renderFilteredCards = (evt) => {
   });
 };
 
-navProjects.querySelectorAll('.projects__menu-button').forEach(evt => {
-  evt.addEventListener('click', renderFilteredCards);
+// navProjects.querySelectorAll('.projects__menu-button').forEach(evt => {
+//   evt.addEventListener('click', renderFilteredCards);
+// });
+
+
+/** Изачально скрыть из выпадающего списка пункт меню, совпадащий с названием кнопки
+ * установить слушатель на пункты меню выпадающего списка для функций изменения названия кнопки и
+ * фильтрации карточек по id
+ */
+projectsBurgerNavItem.forEach(item => {
+  if (item.textContent === projectsBurgerNavBtn.textContent) {
+    item.classList.add('projects__burger-nav-item_hidden');
+  };
+
+  item.addEventListener('click', evt => {
+    evt.preventDefault();
+    chooseNewNavItem(evt);
+    renderFilteredCards(evt);
+    toggleBurgerNav();
+  });
 });
+
+
+
+
+
+
+
+
+
+/** Фильтрация карточек по id (для полного меню)*/
+
+// const renderFilteredCards = (evt) => {
+//   // 1) переключить активную кнопку
+//   navProjects.querySelectorAll('.projects__menu-button').forEach(item => {
+//     if (item.classList.contains('projects__menu-button_active')) {
+//       item.classList.remove('projects__menu-button_active');
+//     };
+//     return;
+//   });
+
+//   evt.target.classList.add('projects__menu-button_active');
+
+
+//   // 2) удалить все карточки со страницы
+//   listElement.querySelectorAll('.projects__card').forEach(item => {
+//     item.remove();
+//   });
+
+
+//   // 3) отрисовать на странице отфильтрованные карточки
+//   projectsCards.forEach(item => {
+
+//     if (item.id === evt.target.getAttribute('id') || evt.target.getAttribute('id') === 'allProjects') {
+//       renderCard(item.logo, item.textMain, item.bgrImgage);
+//     };
+//   });
+// };
+
+// navProjects.querySelectorAll('.projects__menu-button').forEach(evt => {
+//   evt.addEventListener('click', renderFilteredCards);
+// });
 
 
 
