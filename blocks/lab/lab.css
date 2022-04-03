@@ -1,0 +1,22 @@
+.lab {
+  box-sizing: border-box;
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #e0f0ff;
+  color: #000d26;
+}
+
+@media screen and (min-width: 768px) {
+  .lab {
+    padding: 60px 39px;
+    gap: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .lab {
+    padding: 80px 165px;
+  }
+}

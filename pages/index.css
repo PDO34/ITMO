@@ -51,16 +51,22 @@
 
 /** header **/
 @import url(../blocks/header/header.css);
-@import url(../blocks/header/__burger/header__burger.css);
-@import url(../blocks/header/__item/header__item.css);
-@import url(../blocks/header/__link/header__link.css);
-@import url(../blocks/header/__list/header__list.css);
-@import url(../blocks/header/__logo-link/header__logo-link.css);
-@import url(../blocks/header/__navigation/header__navigation.css);
-@import url(../blocks/header/_burger/header_burger_line.css);
-@import url(../blocks/header/_link_acive/header_link_active.css);
+
 /** lab **/
 @import url(../blocks/lab/lab.css);
+@import url(../blocks/lab/__title/lab__title.css);
+@import url(../blocks/lab/__container/lab__container.css);
+@import url(../blocks/lab/__image/lab__image.css);
+@import url(../blocks/lab/__image/_type/lab__image_type_desctop.css);
+@import url(../blocks/lab/__subtitle/lab__subtitle.css);
+@import url(../blocks/lab/__desc/lab__desc.css);
+@import url(../blocks/lab/__cards/lab__cards.css);
+@import url(../blocks/lab/__card/lab__card.css);
+@import url(../blocks/lab/__card-title/lab__card-title.css);
+@import url(../blocks/lab/__card-image/lab__card-image.css);
+@import url(../blocks/lab/__card-icon/lab__card-icon.css);
+@import url(../blocks/lab/__card-desc/lab__card-desc.css);
+@import url(../blocks/lab/__card-more/lab__card-more.css);
 
 /** lead **/
 @import url(../blocks/lead/lead.css);

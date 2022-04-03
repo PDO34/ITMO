@@ -1,0 +1,10 @@
+.lab__card-icon {
+  width: 19px;
+  height: 19px;
+}
+@media screen and (min-width: 1280px) {
+  .lab__card-icon {
+    width: 34px;
+    height: 34px;
+  }
+}

@@ -1,0 +1,13 @@
+.lab__cards {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, calc((100% - 8px) / 2));
+  gap: 8px 8px;
+  list-style-type: none;
+}
+@media screen and (min-width: 768px) {
+  .lab__cards {
+    grid-template-columns: repeat(4, calc((100% - 30px) / 4));
+  }
+}

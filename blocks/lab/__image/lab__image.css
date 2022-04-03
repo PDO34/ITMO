@@ -1,0 +1,28 @@
+.lab__image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .lab__image {
+    border-radius: 10px;
+    grid-area: image;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .lab__image {
+    grid-area: image-office;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .lab__image {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}

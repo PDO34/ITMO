@@ -1,0 +1,71 @@
+.lab__card {
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5.5px;
+  box-shadow: 0px 2.4px 11.8px rgba(1, 54, 157, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.lab__card:hover {
+  color: #ffffff;
+}
+.lab__card:hover button {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: 0.5s;
+}
+.lab__card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 5.5px;
+  background: #ffffff;
+  opacity: 0.7;
+}
+.lab__card:hover::after {
+  background: #009fac;
+  transition: 0.5s;
+}
+@media screen and (min-width: 768px) {
+  .lab__card {
+    padding: 12px;
+    gap: 20px;
+    background-position: 100% 55%;
+    background-repeat: no-repeat;
+    background-size: auto 120%;
+  }
+  .lab__card:nth-of-type(1) {
+    background-image: url(../../../images/Lab/projesct-bg.jpg);
+  }
+  .lab__card:nth-of-type(2) {
+    background-image: url(../../../images/Lab/Machine\ learning.png);
+  }
+  .lab__card:nth-of-type(3) {
+    background-image: url(../../../images/Lab/Data.png);
+  }
+  .lab__card:nth-of-type(4) {
+    background-image: url(../../../images/Lab/Robot.png);
+  }
+  .lab__card:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .lab__card {
+    padding: 30px 20px 20px;
+    gap: 50px;
+  }
+  .lab__card:hover {
+    transform: translateY(-20px);
+    transition: 0.5s;
+  }
+}
